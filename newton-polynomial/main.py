@@ -26,6 +26,8 @@ listData = [
     },
 ]
 
+def formatNumber(num, precision):
+    return round(num, precision)
 # Fungsi untuk menghitung nilai
 def calculateValue(index, current, base):
     if base is None:
@@ -40,7 +42,7 @@ for i in range(len(listData)):
             base = listData[j] if i > 0 else None
             res = calculateValue(j, listData[i], base)
             if res is not None:
-                listData[i]['y'].append(res)
+                listData[i]['y'].append(formatNumber(res,4))
 
 # Mengatur padding untuk format output
 padding = 5
