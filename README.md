@@ -13,6 +13,9 @@ This repository contains implementations of key algorithms commonly used in Scie
 3. **Newton Polynomial Table Generator**  
    A method for constructing the Newton interpolation polynomial, useful for numerical interpolation.
 
+4. **Linear Regression using Least-Square Fit**  
+   This implementation uses the Least-Square Fit method to find the best-fitting line for a set of data points. It calculates the slope and intercept of the regression line and also computes the standard deviation of the model.
+
 ## Requirements
 
 - Python 3.x (no additional libraries needed)
